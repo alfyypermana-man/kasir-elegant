@@ -14,7 +14,7 @@ define('BASE_URL', '');
  * DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD, DB_SSLMODE.
  * Password tidak disimpan di source code.
  */
-$databaseUrl = getenv('DATABASE_URL') ?: getenv('SUPABASE_DB_URL');
+$databaseUrl = getenv('postgresql://postgres:kasirsugi123@db.rjwqfvhufgkfuywxxvxc.supabase.co:5432/postgres') ?: getenv('SUPABASE_DB_URL');
 
 if ($databaseUrl) {
     $parts = parse_url($databaseUrl);
