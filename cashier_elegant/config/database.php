@@ -29,11 +29,11 @@ if ($databaseUrl) {
     $password = isset($parts['pass']) ? urldecode($parts['pass']) : '';
     $sslmode = 'require';
 } else {
-    $host = getenv('DB_HOST') ?: '';
-    $port = getenv('DB_PORT') ?: '5432';
+    $host = getenv('db.rjwqfvhufgkfuywxxvxc.supabase.co') ?: '';
+    $port = getenv('5432') ?: '5432';
     $dbname = getenv('DB_NAME') ?: 'postgres';
     $username = getenv('DB_USER') ?: 'postgres';
-    $password = getenv('DB_PASSWORD') ?: '';
+    $password = getenv('kasirsugi123') ?: '';
     $sslmode = getenv('DB_SSLMODE') ?: 'require';
 }
 
